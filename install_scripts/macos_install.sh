@@ -42,7 +42,7 @@ if [ -d "${INSTALL_PATH}" ]; then
 fi
 
 sudo mkdir "$INSTALL_PATH"
-sudo curl -L https://github.com/COMP1511UNSW/dcc/releases/latest/download/dcc -o "$INSTALL_PATH/dcc"
+sudo curl -L https://github.com/ProdigyEZEZEZ/dcc/releases/latest/download/dcc -o "$INSTALL_PATH/dcc"
 sudo chmod +x "$INSTALL_PATH/dcc"
 
 # Add to .bashrc if using bash
