@@ -251,7 +251,7 @@ static void __dcc_signal_handler(int signum) {
         signum_buffer); // less likely? to trigger another error than direct setenv
 
     char threadid_buffer[64];
-    snprintf(threadid_buffer, sizeof threadid_buffer, "DCC_SIGNAL_THREAD=%ld", (long)pthread_threadid_np());
+    snprintf(threadid_buffer, sizeof threadid_buffer, "DCC_SIGNAL_THREAD=%ld", (long)gettid());
     putenvd(threadid_buffer);
 
     _explain_error(); // not reached
